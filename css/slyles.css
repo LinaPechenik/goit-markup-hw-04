@@ -66,6 +66,7 @@ button {
 .header {
   background-color: var(--white-background);
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -126,10 +127,12 @@ button {
   gap: 40px;
 }
 
-.studio-page {
+.studio-link {
+  color: #404bbf;
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.studio-page::after {
+.studio-link::after {
   position: absolute;
   display: block;
   width: 100%;
@@ -138,6 +141,10 @@ button {
   background-color: #404BBF;
   margin-top: 20px;
   border-radius: 2px;
+}
+
+.adress-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-navigation .link {
